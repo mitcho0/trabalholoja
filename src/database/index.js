@@ -13,7 +13,7 @@ Vendas.init(connection)
 
 Produtos.associate(connection.models)
 Categoria.associate(connection.models)
-
+Vendas.associate(connection.models)
 
 
 

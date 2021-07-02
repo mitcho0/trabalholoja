@@ -13,8 +13,8 @@ class Produtos extends Model {
     }
 
      static associate(models){
-     
-       
+         this.belongsTo(models.Categoria,{foreignKey:'id_categoria',as:'produto'}),
+         this.belongsTo(models.Vendas,{foreignKey:'id_produto',as:'produtos'})
      }
 }
 
